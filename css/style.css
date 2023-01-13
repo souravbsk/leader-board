@@ -1,0 +1,134 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+:root {
+    --primary: #562EFF;
+    --secondary: #FFFFFF;
+    --black: #000000;
+    --red: #ED6B4F;
+    --redBg: #FEE5DF;
+    --bodyBg: #E5E5E5;
+    --startFill: #FFC014;
+    --starEmpty: #AEAEAE;
+    --pera: #9F9F9F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css start  */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: var(--bodyBg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+}
+
+.container {
+    width: 870px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+/* common css end */
+
+
+
+/* header css start  */
+
+
+/* header css end */
+/* player css start */
+
+.player-warper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.player>img {
+    width: 56px;
+    height: 56px;
+}
+
+.player>.player-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+/* player css end */
+
+/* blog css start  */
+.blogs-warper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog>.thumble{
+    flex: 1;
+}
+.blog>.thumble>img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.blog-content>.blog-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.blog-content>.aurther-title {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pera);
+}
+.blog-content>.aurther-title a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* blog css end*/
